@@ -12,7 +12,7 @@ export function TeamSection() {
 
         <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
             {staff.map((member) => (
-                <GlassContainer key={member.id} className="min-w-[85vw] md:min-w-0 snap-center group overflow-hidden rounded-none border-none bg-transparent shadow-none">
+                <GlassContainer key={member.id} hoverEffect={true} className="min-w-[85vw] md:min-w-0 snap-center group overflow-hidden p-0 border-white/10 bg-white/5">
                     <div className="relative h-[400px] overflow-hidden mb-6 rounded-lg">
                         <img
                             src={member.image}

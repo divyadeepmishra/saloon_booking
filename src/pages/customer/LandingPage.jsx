@@ -174,7 +174,7 @@ export function LandingPage() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.2 }}
-                      className="min-w-[85vw] md:min-w-0 snap-center p-10 bg-background border border-border relative hover:shadow-xl hover:border-primary/50 transition-all duration-300"
+                      className="min-w-[85vw] md:min-w-0 snap-center p-10 bg-background border border-border/50 relative shadow-premium hover:shadow-2xl hover:shadow-primary/10 hover:border-primary/50 transition-all duration-500 rounded-2xl"
                     >
                         <div className="absolute -top-4 left-8 bg-primary text-white px-3 py-1 text-4xl font-serif">"</div>
                         <div className="flex gap-1 text-primary mb-6">

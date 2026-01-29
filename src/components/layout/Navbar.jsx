@@ -9,7 +9,7 @@ export function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <header className="fixed top-4 left-1/2 z-50 -translate-x-1/2 w-[98%] max-w-[1920px] rounded-xl border border-primary/20 bg-background/60 backdrop-blur-xl shadow-lg supports-[backdrop-filter]:bg-background/60">
+    <header className="fixed top-4 left-1/2 z-50 -translate-x-1/2 w-[98%] max-w-[1920px] rounded-xl border border-primary/20 bg-background/60 backdrop-blur-xl shadow-premium supports-[backdrop-filter]:bg-background/60">
       <div className="container flex h-20 items-center px-6 justify-between max-w-none">
         <div className="mr-8 flex">
           <Link to="/" className="mr-6 flex items-center space-x-2">
