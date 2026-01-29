@@ -153,7 +153,7 @@ export function BookingWizard({ children, initialServices = [] }) {
                         >
                              <div>
                                 <h3 className="font-semibold mb-4">Select Date</h3>
-                                <div className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory">
+                                <div className="flex gap-2 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory w-full">
                                     {[0,1,2,3,4,5,6,7,8,9,10,11,12,13].map(offset => {
                                         const d = new Date();
                                         d.setDate(d.getDate() + offset);
@@ -164,7 +164,7 @@ export function BookingWizard({ children, initialServices = [] }) {
                                                 key={offset}
                                                 onClick={() => setBookingData({...bookingData, date: d})}
                                                 className={cn(
-                                                    "flex flex-col items-center justify-center min-w-[70px] h-20 rounded-xl border border-border transition-all snap-center",
+                                                    "flex flex-col items-center justify-center min-w-[70px] h-20 rounded-xl border border-border transition-all snap-center flex-shrink-0",
                                                     isSelected ? "bg-primary text-primary-foreground border-primary" : "hover:bg-accent"
                                                 )}
                                             >
@@ -178,13 +178,13 @@ export function BookingWizard({ children, initialServices = [] }) {
 
                              <div>
                                 <h3 className="font-semibold mb-4">Select Time</h3>
-                                <div className="flex overflow-x-auto pb-4 gap-3 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-4">
+                                <div className="flex overflow-x-auto pb-4 gap-3 snap-x snap-mandatory scrollbar-hide md:grid md:grid-cols-4 w-full">
                                     {["09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00"].map(t => (
                                         <button
                                             key={t}
                                             onClick={() => { setBookingData({...bookingData, time: t}); nextStep(); }}
                                             className={cn(
-                                                "min-w-[100px] md:min-w-0 py-3 md:py-2 rounded-lg border border-border text-sm hover:bg-accent snap-center",
+                                                "min-w-[100px] md:min-w-0 py-3 md:py-2 rounded-lg border border-border text-sm hover:bg-accent snap-center flex-shrink-0",
                                                 bookingData.time === t ? "bg-primary text-primary-foreground border-primary" : ""
                                             )}
                                         >
