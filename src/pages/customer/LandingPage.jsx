@@ -166,7 +166,7 @@ export function LandingPage() {
             >
               What Our <span className="text-primary">Clients Say</span>
             </motion.h2>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-3 gap-8 pb-8 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
                 {reviews.map((review, index) => (
                     <motion.div
                       key={review.id}
@@ -174,7 +174,7 @@ export function LandingPage() {
                       whileInView={{ opacity: 1, y: 0 }}
                       viewport={{ once: true }}
                       transition={{ delay: index * 0.2 }}
-                      className="p-10 bg-background border border-border relative hover:shadow-xl hover:border-primary/50 transition-all duration-300"
+                      className="min-w-[85vw] md:min-w-0 snap-center p-10 bg-background border border-border relative hover:shadow-xl hover:border-primary/50 transition-all duration-300"
                     >
                         <div className="absolute -top-4 left-8 bg-primary text-white px-3 py-1 text-4xl font-serif">"</div>
                         <div className="flex gap-1 text-primary mb-6">

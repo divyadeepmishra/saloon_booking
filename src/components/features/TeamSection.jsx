@@ -10,9 +10,9 @@ export function TeamSection() {
             <p className="text-muted-foreground max-w-2xl mx-auto">Our team of expert barbers and stylists are dedicated to providing the best grooming experience.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="flex overflow-x-auto snap-x snap-mandatory md:grid md:grid-cols-2 lg:grid-cols-3 gap-8 pb-8 md:pb-0 scrollbar-hide -mx-4 px-4 md:mx-0 md:px-0">
             {staff.map((member) => (
-                <GlassContainer key={member.id} className="group overflow-hidden rounded-none border-none bg-transparent shadow-none">
+                <GlassContainer key={member.id} className="min-w-[85vw] md:min-w-0 snap-center group overflow-hidden rounded-none border-none bg-transparent shadow-none">
                     <div className="relative h-[400px] overflow-hidden mb-6 rounded-lg">
                         <img
                             src={member.image}
